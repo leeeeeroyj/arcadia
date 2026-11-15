@@ -1,0 +1,73 @@
+[
+  {
+    "slug": "space-raider",
+    "title": "Space Raider",
+    "tagline": "Blast the hostiles. Grab what glows. Get out alive.",
+    "accent": "#5ef2ff",
+    "inputs": [
+      "keys",
+      "pad",
+      "touch"
+    ],
+    "loop": true
+  },
+  {
+    "slug": "mars-patrol",
+    "title": "Mars Patrol",
+    "tagline": "Jump the craters. Shoot the machines. Beat par.",
+    "accent": "#ff8243",
+    "inputs": [
+      "keys",
+      "pad",
+      "touch"
+    ],
+    "loop": true
+  },
+  {
+    "slug": "sentinel",
+    "title": "Sentinel",
+    "tagline": "Hold the ring. Shoot the Snatchers. Catch the colonists.",
+    "accent": "#ffc04d",
+    "inputs": [
+      "keys",
+      "pad",
+      "touch"
+    ],
+    "loop": true
+  },
+  {
+    "slug": "hedge-hogger",
+    "title": "Hedge-Hogger",
+    "tagline": "Five hoglets. One night. There and back.",
+    "accent": "#e0453a",
+    "inputs": [
+      "keys",
+      "pad",
+      "touch"
+    ],
+    "hiKey": "hedge-hogger-hi",
+    "loop": true
+  },
+  {
+    "slug": "pro-racer-z",
+    "title": "Pro Racer Z",
+    "tagline": "Hover racing on the rooftops of a neon city.",
+    "accent": "#ff3ea5",
+    "inputs": [
+      "keys",
+      "pad"
+    ],
+    "loop": true
+  },
+  {
+    "slug": "heroic-crusader",
+    "title": "Heroic Crusader",
+    "tagline": "Four beacons. One squire. The Gloam.",
+    "accent": "#9d7be0",
+    "inputs": [
+      "keys",
+      "pad"
+    ],
+    "loop": true
+  }
+]

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Arcadia</title>
+  <meta name="description" content="An arcade of original browser games. Free play.">
+  <meta name="theme-color" content="#0b0714">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monoton&family=Bungee&family=VT323&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="arcadia.js" type="module"></script>
+</head>
+<body>
+  <header class="sign-wrap">
+    <div class="sign">
+      <div class="bulbs" aria-hidden="true"></div>
+      <h1>Arcadia</h1>
+    </div>
+    <p class="credits"><span class="blink">Free play</span> <span class="sep">·</span> <span id="count">6</span> games</p>
+  </header>
+
+  <main>
+    <section class="floor" id="floor" aria-label="Games"></section>
+  </main>
+
+  <footer>
+    <p>Every game runs in your browser. Keyboard, controller or touch, where the cabinet says so.</p>
+    <p><a href="https://github.com/leeeeeroyj">Source on GitHub</a></p>
+  </footer>
+
+  <template id="cab-tpl">
+    <article class="cab">
+      <header class="marquee"><h2></h2></header>
+      <div class="bezel">
+        <div class="crt"><img class="still" alt="" width="416" height="228"></div>
+      </div>
+      <div class="panel" aria-hidden="true">
+        <span class="stick"></span>
+        <span class="buttons"><i></i><i></i><i></i></span>
+      </div>
+      <p class="tagline"></p>
+      <p class="inputs"></p>
+      <p class="hi" hidden></p>
+      <a class="coin"><span>Insert coin</span></a>
+    </article>
+  </template>
+</body>
+</html>
