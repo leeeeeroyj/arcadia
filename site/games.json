@@ -16,6 +16,7 @@
     "title": "Mars Patrol",
     "tagline": "Jump the craters. Shoot the machines. Beat par.",
     "accent": "#ff8243",
+    "font": "\"Saira Stencil One\", \"Arial Narrow\", Impact, sans-serif",
     "inputs": [
       "keys",
       "pad",
@@ -28,6 +29,7 @@
     "title": "Sentinel",
     "tagline": "Hold the ring. Shoot the Snatchers. Catch the colonists.",
     "accent": "#ffc04d",
+    "font": "\"Silkscreen\", \"Courier New\", monospace",
     "inputs": [
       "keys",
       "pad",
@@ -40,6 +42,7 @@
     "title": "Hedge-Hogger",
     "tagline": "Five hoglets. One night. There and back.",
     "accent": "#e0453a",
+    "font": "\"Lilita One\", \"Arial Rounded MT Bold\", \"Trebuchet MS\", sans-serif",
     "inputs": [
       "keys",
       "pad",
@@ -53,6 +56,7 @@
     "title": "Pro Racer Z",
     "tagline": "Hover racing on the rooftops of a neon city.",
     "accent": "#ff3ea5",
+    "font": "\"Tilt Neon\", \"Arial Narrow\", sans-serif",
     "inputs": [
       "keys",
       "pad"
@@ -64,6 +68,8 @@
     "title": "Heroic Crusader",
     "tagline": "Four beacons. One squire. The Gloam.",
     "accent": "#9d7be0",
+    "font": "\"Jacquard 24\", \"Silkscreen\", \"Courier New\", serif",
+    "fontScale": 1.3,
     "inputs": [
       "keys",
       "pad"

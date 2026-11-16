@@ -142,10 +142,10 @@ main { max-width: 1180px; margin: 0 auto; }
 }
 .marquee h2 {
   margin: 0;
-  font-family: var(--font-marquee);
+  font-family: var(--font-title, var(--font-marquee));
   font-weight: 400;
-  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
-  line-height: 1.1;
+  font-size: calc(clamp(1.15rem, 2.2vw, 1.5rem) * var(--title-scale, 1));
+  line-height: calc(1.1 / var(--title-scale, 1));
   color: #fff;
   text-shadow: 0 0 10px var(--accent), 0 0 22px color-mix(in srgb, var(--accent) 60%, transparent);
   text-wrap: balance;

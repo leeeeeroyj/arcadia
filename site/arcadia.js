@@ -102,6 +102,8 @@ function attachPreview(cab, crt, game) {
 function buildCabinet(tpl, game) {
   const node = tpl.content.firstElementChild.cloneNode(true);
   node.style.setProperty('--accent', game.accent);
+  if (game.font) node.style.setProperty('--font-title', game.font);
+  if (game.fontScale) node.style.setProperty('--title-scale', game.fontScale);
   node.querySelector('h2').textContent = game.title;
 
   const img = node.querySelector('img.still');
