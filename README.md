@@ -11,13 +11,13 @@ An arcade floor for a collection of original browser games. Each cabinet shows i
 [![Deploy](https://github.com/leeeeeroyj/arcadia/actions/workflows/deploy.yml/badge.svg)](https://github.com/leeeeeroyj/arcadia/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-![Arcadia: a pink neon ARCADIA sign ringed with marquee bulbs over a row of arcade cabinets for Space Raider, Mars Patrol and Sentinel, each with a lit marquee, a gameplay screen, a joystick and an Insert Coin button, on dark carpet patterned with neon squiggles](docs/screenshot.png)
+![Arcadia: a pink neon ARCADIA sign ringed with marquee bulbs over two rows of arcade cabinets on dark carpet patterned with neon squiggles. Each cabinet has a lit marquee lettered in its game's own font (stencil for Mars Patrol, pixel type for Sentinel, blackletter for Heroic Crusader), a gameplay screen, a joystick and an Insert Coin button](docs/screenshot.png)
 
 </div>
 
 ## About
 
-- **A cabinet for every game.** Each has a lit marquee and side art in its game's colour, a CRT screen with scanlines, and a control panel.
+- **A cabinet for every game.** Each has a lit marquee lettered in its game's own display font, side art in its game's colour, a CRT screen with scanlines, and a control panel.
 - **Screens that play.** Hover a cabinet, or scroll it into view on a phone, and its screen runs a short loop of real gameplay. Otherwise it shows a still.
 - **Know before you play.** Every cabinet lists the inputs its game takes. On a phone, games that need a keyboard or controller say so.
 - **Your best score.** Games that save a high score show it on their cabinet.
@@ -52,6 +52,8 @@ Each game is its own repository and GitHub Pages site. Arcadia links to them and
    ```
 
    `slug` is the game's repository name, so the cabinet links to `../<slug>/`. `hiKey` (optional) is the `localStorage` key where the game keeps its high score.
+
+   `font` (optional) is a CSS font stack for the marquee title, usually the display font from the game's concept sheet; add the family to the Google Fonts link in `site/index.html`. Without it the marquee uses Bungee. `fontScale` (optional) sizes the title up or down for a font that reads small or large, such as `1.3`.
 2. Put a 416 × 228 still in `site/screens/<slug>.png`.
 3. Add a script for it to `tools/record-loops.mjs` and record its loop (below).
 
