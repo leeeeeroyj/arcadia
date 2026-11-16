@@ -18,7 +18,7 @@ An arcade floor for a collection of original browser games. Each cabinet shows i
 ## About
 
 - **A cabinet for every game.** Each has a lit marquee lettered in its game's own display font, side art in its game's colour, a CRT screen with scanlines, and a control panel.
-- **Screens that play.** Hover a cabinet, or scroll it into view on a phone, and its screen runs a short loop of real gameplay. Otherwise it shows a still.
+- **Screens that play.** Hover a cabinet and its screen runs the game itself, playing its own silent attract mode. On a phone, scroll it into view for a short recorded loop of the same. Otherwise it shows a still.
 - **Know before you play.** Every cabinet lists the inputs its game takes. On a phone, games that need a keyboard or controller say so.
 - **Your best score.** Games that save a high score show it on their cabinet.
 - **No build step.** Plain HTML, CSS and JavaScript, with the game list in one JSON file.
@@ -47,28 +47,28 @@ Each game is its own repository and GitHub Pages site. Arcadia links to them and
      "tagline": "One line that sells it.",
      "accent": "#5ef2ff",
      "inputs": ["keys", "pad", "touch"],
+     "hiKey": "my-game-hi",
+     "attract": true,
      "loop": true
    }
    ```
 
-   `slug` is the game's repository name, so the cabinet links to `../<slug>/`. `hiKey` (optional) is the `localStorage` key where the game keeps its high score.
+   `slug` is the game's repository name, so the cabinet links to `../<slug>/`. `hiKey` (optional) is the `localStorage` key where the game keeps its high score as a plain number; the games use `<slug>-hi`, and the cabinet shows it as "Your best". `attract` says the game has an attract mode (`?attract`: it plays itself, silently, ignoring input, and never writes storage).
 
    `font` (optional) is a CSS font stack for the marquee title, usually the display font from the game's concept sheet; add the family to the Google Fonts link in `site/index.html`. Without it the marquee uses Bungee. `fontScale` (optional) sizes the title up or down for a font that reads small or large, such as `1.3`.
 2. Put a 416 × 228 still in `site/screens/<slug>.png`.
-3. Add a script for it to `tools/record-loops.mjs` and record its loop (below).
+3. Add it to `GAMES` in `tools/record-loops.mjs` with an attract seed, and record its loop (below).
 
-A game whose own attract mode can run in a frame gets `"attract": true` instead of showing the recorded loop on desktop. Phones keep the loop.
+On desktop, a cabinet with `"attract": true` runs the game's attract mode live in an inert frame when you hover it. Phones play the recorded loop instead.
 
 ## Recording the loops
 
-`tools/record-loops.mjs` plays each game in headless Chrome with a short input script, captures 8 seconds over the DevTools protocol, and encodes `site/loops/<slug>.webm` with ffmpeg. It needs Node.js 22+, Google Chrome and ffmpeg.
+`tools/record-loops.mjs` opens each game's live Pages build in attract mode (`?attract&seed=<n>`) in headless Chrome, captures 8 seconds over the DevTools protocol, and encodes `site/loops/<slug>.webm` with ffmpeg. No input scripts: the games play themselves. It needs Node.js 22+, Google Chrome and ffmpeg.
 
 ```bash
 node tools/record-loops.mjs            # every game
 node tools/record-loops.mjs sentinel   # one game
 ```
-
-Most games are recorded from their live Pages builds. A few scripts need a game's dev-only hooks, such as Pro Racer Z's autopilot; those are recorded from a dev server built from that game's last commit, and expect its checkout beside this one.
 
 ## Run it locally
 

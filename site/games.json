@@ -9,6 +9,8 @@
       "pad",
       "touch"
     ],
+    "hiKey": "space-raider-hi",
+    "attract": true,
     "loop": true
   },
   {
@@ -22,6 +24,8 @@
       "pad",
       "touch"
     ],
+    "hiKey": "mars-patrol-hi",
+    "attract": true,
     "loop": true
   },
   {
@@ -35,6 +39,8 @@
       "pad",
       "touch"
     ],
+    "hiKey": "sentinel-hi",
+    "attract": true,
     "loop": true
   },
   {
@@ -49,6 +55,7 @@
       "touch"
     ],
     "hiKey": "hedge-hogger-hi",
+    "attract": true,
     "loop": true
   },
   {
@@ -61,6 +68,8 @@
       "keys",
       "pad"
     ],
+    "hiKey": "pro-racer-z-hi",
+    "attract": true,
     "loop": true
   },
   {
@@ -74,6 +83,7 @@
       "keys",
       "pad"
     ],
+    "attract": true,
     "loop": true
   }
 ]
