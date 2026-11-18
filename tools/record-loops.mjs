@@ -30,6 +30,7 @@ const GPU_FLAGS = '--ignore-gpu-blocklist --use-gl=angle --use-angle=gl-egl';
  */
 const GAMES = {
   'space-raider': { size: [416, 228], seed: 3 },
+  'space-raider-2': { size: [416, 228], seed: 3 },
   'mars-patrol': { size: [416, 228], seed: 7 },
   sentinel: { size: [416, 228], seed: 2 },
   'hedge-hogger': { size: [416, 248], seed: 3 },

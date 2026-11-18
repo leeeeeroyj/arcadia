@@ -28,6 +28,7 @@ An arcade floor for a collection of original browser games. Each cabinet shows i
 | Game | | Inputs |
 | --- | --- | --- |
 | [Space Raider](https://leeeeeroyj.github.io/space-raider/) | Blast the hostiles. Grab what glows. Get out alive. | Keyboard, controller, touch |
+| [Space Raider 2](https://leeeeeroyj.github.io/space-raider-2/) | Voxel vaults. Bigger beams. Dodge the mortars. | Keyboard, controller, touch |
 | [Mars Patrol](https://leeeeeroyj.github.io/mars-patrol/) | Jump the craters. Shoot the machines. Beat par. | Keyboard, controller, touch |
 | [Sentinel](https://leeeeeroyj.github.io/sentinel/) | Hold the ring. Shoot the Snatchers. Catch the colonists. | Keyboard, controller, touch |
 | [Hedge-Hogger](https://leeeeeroyj.github.io/hedge-hogger/) | Five hoglets. One night. There and back. | Keyboard, controller, touch |

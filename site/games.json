@@ -14,6 +14,21 @@
     "loop": true
   },
   {
+    "slug": "space-raider-2",
+    "title": "Space Raider 2",
+    "tagline": "Voxel vaults. Bigger beams. Dodge the mortars.",
+    "accent": "#ff3df0",
+    "font": "\"Silkscreen\", \"Courier New\", monospace",
+    "inputs": [
+      "keys",
+      "pad",
+      "touch"
+    ],
+    "hiKey": "space-raider-2-hi",
+    "attract": true,
+    "loop": true
+  },
+  {
     "slug": "mars-patrol",
     "title": "Mars Patrol",
     "tagline": "Jump the craters. Shoot the machines. Beat par.",
