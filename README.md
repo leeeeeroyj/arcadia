@@ -11,7 +11,7 @@ An arcade floor for a collection of original browser games. Each cabinet shows i
 [![Deploy](https://github.com/leeeeeroyj/arcadia/actions/workflows/deploy.yml/badge.svg)](https://github.com/leeeeeroyj/arcadia/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-![Arcadia: a pink neon ARCADIA sign ringed with marquee bulbs over two rows of arcade cabinets on dark carpet patterned with neon squiggles. Each cabinet has a lit marquee lettered in its game's own font (stencil for Mars Patrol, pixel type for Sentinel, blackletter for Heroic Crusader), a gameplay screen, a joystick and an Insert Coin button](docs/screenshot.png)
+![Arcadia: a pink neon ARCADIA sign ringed with marquee bulbs over two rows of arcade cabinets on dark carpet patterned with neon squiggles. Each cabinet has a lit marquee lettered in its game's own font (pixel type for Space Raider 2 and Sentinel, stencil for Mars Patrol, rounded for Hedge-Hogger), a gameplay screen, a joystick and an Insert Coin button](docs/screenshot.png)
 
 </div>
 
