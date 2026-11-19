@@ -13,38 +13,104 @@
   <script src="arcadia.js" type="module"></script>
 </head>
 <body>
-  <header class="sign-wrap">
+  <header class="top">
     <div class="sign">
       <div class="bulbs" aria-hidden="true"></div>
       <h1>Arcadia</h1>
     </div>
-    <p class="credits"><span class="blink">Free play</span> <span class="sep">·</span> <span id="count">6</span> games</p>
+    <p class="credits"><span class="blink">Free play</span> <span class="sep">·</span> <span id="count">8</span> games</p>
   </header>
 
-  <main>
-    <section class="floor" id="floor" aria-label="Games"></section>
+  <main class="room" id="room">
+    <section class="wall" aria-label="Now playing">
+      <div class="set">
+        <div class="glow" aria-hidden="true"></div>
+
+        <div class="tv" id="tv">
+          <div class="antenna" aria-hidden="true"><i></i><i></i><b></b></div>
+          <div class="tv-inner">
+            <div class="bezel">
+              <div class="glass">
+                <div class="picture" id="picture"><img class="still" id="still" alt="" width="416" height="228"></div>
+                <span class="osd" id="osd" aria-hidden="true"></span>
+                <span class="snow" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="tv-side" aria-hidden="true">
+              <span class="brand">Arcadia</span>
+              <span class="knob"><i id="knob"></i></span>
+              <span class="knob-label">Channel</span>
+              <span class="knob small"><i></i></span>
+              <span class="knob-label">Volume</span>
+              <span class="grille"></span>
+              <span class="power"><b></b>Power</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="now">
+          <p class="now-label" aria-hidden="true">Now playing</p>
+          <h2 class="now-title" id="title" aria-live="polite"></h2>
+        </div>
+
+        <div class="info">
+          <p class="tagline" id="tagline"></p>
+          <p class="inputs" id="inputs"></p>
+          <p class="hi" id="hi"></p>
+          <a class="start" id="start">Press start</a>
+        </div>
+
+        <div class="deck" aria-hidden="true">
+          <div class="console">
+            <div class="console-cart"><span class="ridge"></span><span class="band"><span id="slot-title"></span></span></div>
+            <div class="console-body">
+              <span class="vents"></span>
+              <span class="stripe"></span>
+              <span class="face"><span class="ports"><i></i><i></i></span><span class="plate">Arcadia</span><span class="switches"><i></i><i></i><b></b></span></span>
+            </div>
+            <span class="console-slot"></span>
+          </div>
+          <div class="joystick">
+            <svg class="cord" viewBox="0 0 40 44"><path d="M34 32 C26 46 12 42 6 24"/></svg>
+            <span class="joy-base"></span><span class="joy-button"></span><span class="joy-shaft"></span><span class="joy-grip"></span>
+          </div>
+        </div>
+
+        <div class="stand" aria-hidden="true">
+          <div class="stand-top"></div>
+          <div class="stand-front"><span class="door"></span><span class="door"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="floor" aria-label="Games">
+      <div class="shelf">
+        <button class="arrow prev" id="prev" type="button" aria-label="Previous game"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg></button>
+        <div class="carts" id="carts"></div>
+        <button class="arrow next" id="next" type="button" aria-label="Next game"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+      </div>
+      <p class="hint">
+        <span class="keys"><kbd>←</kbd> <kbd>→</kbd> change the channel · click a cartridge to load it</span>
+        <span class="touch">Swipe the cartridges, or tap one to load it</span>
+      </p>
+    </section>
   </main>
 
   <footer>
-    <p>Every game runs in your browser. Keyboard, controller or touch, where the cabinet says so.</p>
+    <p>Every game runs in your browser. Keyboard, controller or touch, where the game says so.</p>
     <p><a href="https://github.com/leeeeeroyj">Source on GitHub</a></p>
   </footer>
 
-  <template id="cab-tpl">
-    <article class="cab">
-      <header class="marquee"><h2></h2></header>
-      <div class="bezel">
-        <div class="crt"><img class="still" alt="" width="416" height="228"></div>
-      </div>
-      <div class="panel" aria-hidden="true">
-        <span class="stick"></span>
-        <span class="buttons"><i></i><i></i><i></i></span>
-      </div>
-      <p class="tagline"></p>
-      <p class="inputs"></p>
-      <p class="hi" hidden></p>
-      <a class="coin"><span>Insert coin</span></a>
-    </article>
+  <template id="cart-tpl">
+    <button class="cart" type="button">
+      <span class="cart-ridge"></span>
+      <span class="cart-label">
+        <span class="cart-band"><span class="cart-title"></span></span>
+        <img class="cart-art" alt="" width="416" height="228">
+        <span class="cart-no"></span>
+      </span>
+      <span class="cart-grip"></span>
+    </button>
   </template>
 </body>
 </html>

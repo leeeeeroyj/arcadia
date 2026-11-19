@@ -1,4 +1,4 @@
-// Records the short gameplay loops that play on Arcadia's cabinet screens on phones (desktop runs the game itself).
+// Records the short gameplay loops that play on Arcadia's TV on phones (desktop runs the game itself).
 // Opens each game's published Pages build in attract mode (`?attract&seed=<n>`: the game plays itself, silently),
 // captures frames over CDP's screencast and encodes them with ffmpeg into site/loops/<slug>.webm. Node built-ins only;
 // needs google-chrome and ffmpeg on PATH.
