@@ -100,5 +100,20 @@
     ],
     "attract": true,
     "loop": true
+  },
+  {
+    "slug": "overtone",
+    "title": "Overtone",
+    "tagline": "A shooter that keeps time.",
+    "accent": "#ff4fd8",
+    "font": "\"Monoton\", \"Courier New\", monospace",
+    "inputs": [
+      "keys",
+      "pad",
+      "touch"
+    ],
+    "hiKey": "overtone-hi",
+    "attract": true,
+    "loop": true
   }
 ]

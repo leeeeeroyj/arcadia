@@ -36,6 +36,7 @@ const GAMES = {
   'hedge-hogger': { size: [416, 248], seed: 3 },
   'pro-racer-z': { size: [416, 228], seed: 2 },
   'heroic-crusader': { size: [416, 228], seed: 6 },
+  overtone: { size: [416, 228], seed: 7 },
 };
 
 const waitFor = async (fn, ms = 30000) => {

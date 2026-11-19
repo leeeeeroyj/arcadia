@@ -34,6 +34,7 @@ An arcade floor for a collection of original browser games. Each cabinet shows i
 | [Hedge-Hogger](https://leeeeeroyj.github.io/hedge-hogger/) | Five hoglets. One night. There and back. | Keyboard, controller, touch |
 | [Pro Racer Z](https://leeeeeroyj.github.io/pro-racer-z/) | Hover racing on the rooftops of a neon city. | Keyboard, controller |
 | [Heroic Crusader](https://leeeeeroyj.github.io/heroic-crusader/) | Four beacons. One squire. The Gloam. | Keyboard, controller |
+| [Overtone](https://leeeeeroyj.github.io/overtone/) | A shooter that keeps time. | Keyboard, controller, touch |
 
 Each game is its own repository and GitHub Pages site. Arcadia links to them and lives beside them at `/arcadia/`.
 
